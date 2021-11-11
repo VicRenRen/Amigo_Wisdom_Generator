@@ -22,7 +22,7 @@ function Main() {
     //   });
 
     async function randomQuote() {
-      const response = await fetch("https://api.quotable.io/random");
+      const response = await fetch("http://api.quotable.io/random");
       const quote = await response.json();
       getQuote(quote.content);
       getAuthor(quote.author);
