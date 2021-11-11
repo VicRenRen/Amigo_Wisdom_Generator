@@ -20,6 +20,7 @@ function Main() {
     //     // getCategory(quote.tags);
     //     // console.log(quote);
     //   });
+
     async function randomQuote() {
       const response = await fetch("https://api.quotable.io/random");
       const quote = await response.json();
@@ -27,7 +28,7 @@ function Main() {
       getAuthor(quote.author);
       // getCategory(quote.tags);
       // console.log(quote);
-      console.log(`${quote.content} —${quote.author}`);
+      console.log(`${quote.content},${quote.author}`);
     }
     randomQuote();
   }, []);
