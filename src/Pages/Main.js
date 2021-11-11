@@ -12,14 +12,24 @@ function Main() {
   // const [category, getCategory] = useState("");
 
   useEffect(() => {
-    fetch("https://api.quotable.io/random")
-      .then((response) => response.json())
-      .then((quote) => {
-        getQuote(quote.content);
-        getAuthor(quote.author);
-        // getCategory(quote.tags);
-        // console.log(quote);
-      });
+    // fetch("https://api.quotable.io/random/")
+    //   .then((response) => response.json())
+    //   .then((quote) => {
+    //     getQuote(quote.content);
+    //     getAuthor(quote.author);
+    //     // getCategory(quote.tags);
+    //     // console.log(quote);
+    //   });
+    async function randomQuote() {
+      const response = await fetch("https://api.quotable.io/random");
+      const quote = await response.json();
+      getQuote(quote.content);
+      getAuthor(quote.author);
+      // getCategory(quote.tags);
+      // console.log(quote);
+      console.log(`${quote.content} —${quote.author}`);
+    }
+    randomQuote();
   }, []);
 
   function changeBG() {
