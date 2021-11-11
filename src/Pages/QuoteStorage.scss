@@ -1,12 +1,15 @@
 @import "../globalStyle.scss";
 
 .myQuotes {
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   //   flex: center;
   position: relative;
-  background-color: whitesmoke;
-  border-radius: 8px;
+  background-color: transparent;
+  border: 10px solid;
+  border-color: white;
+  border-radius: 10px;
   //   text-align: justify;
   min-height: auto;
   min-width: 70vw;
@@ -32,13 +35,21 @@ input {
   flex-wrap: wrap;
 }
 .myQuotesRow2 {
+  color: $secondary-colour;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.savedQuotes {
+.savedQuotesContainer {
+  margin: 1em;
+  padding: 1em;
   font-weight: 600;
   text-transform: uppercase;
   flex-direction: row;
+  background-color: white;
+  border-radius: 8px;
   //   border: 2px solid $primary-colour;
+}
+.savedQuotes {
+  cursor: pointer;
 }

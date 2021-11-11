@@ -4,8 +4,8 @@ export default function OneQuote({ oneQuote, toggleQuotes }) {
   }
 
   return (
-    <div className="savedQuotes">
-      <label>
+    <div className="savedQuotesContainer">
+      <label className="savedQuotes">
         {oneQuote.name}
         <input
           type="checkbox"
