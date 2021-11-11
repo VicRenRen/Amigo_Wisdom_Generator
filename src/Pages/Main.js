@@ -37,7 +37,7 @@ function Main() {
   }
 
   function freshQuote() {
-    fetch("http://api.quotable.io/random")
+    fetch("http://api.quotable.io/random/")
       .then((response) => response.json())
       .then((quote) => {
         getQuote(quote.content);
