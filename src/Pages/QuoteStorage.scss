@@ -1,0 +1,44 @@
+@import "../globalStyle.scss";
+
+.myQuotes {
+  display: flex;
+  flex-direction: column;
+  //   flex: center;
+  position: relative;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  //   text-align: justify;
+  min-height: auto;
+  min-width: 70vw;
+  max-width: 70vh;
+  overflow: visible;
+  margin: auto;
+  padding: 20px 40px 20px 40px;
+  //   white-space: pre-wrap;
+}
+
+input {
+  margin-top: 1em;
+  padding: 1.2em;
+  width: 100em;
+  border-radius: 8px;
+}
+
+.myQuotesRow1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.myQuotesRow2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.savedQuotes {
+  font-weight: 600;
+  text-transform: uppercase;
+  flex-direction: row;
+  //   border: 2px solid $primary-colour;
+}
